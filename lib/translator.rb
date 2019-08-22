@@ -39,7 +39,7 @@ def get_english_meaning(path, emoticon)
   if dictionary[:get_meaning].include?(emoticon)
     return dictionary[:get_meaning][emoticon]
   else
-    
+    return "Sorry, that emoticon was not found"
   end
   
 end
