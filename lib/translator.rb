@@ -27,7 +27,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   dictionary = load_library(path)
-  if dictionary.include?(emoticon)
+  if dictionary[:get_emoticon].include?(emoticon)
     return dictionary[:get_emoticon][emoticon]
   else
     return "Sorry, that emoticon was not found"
