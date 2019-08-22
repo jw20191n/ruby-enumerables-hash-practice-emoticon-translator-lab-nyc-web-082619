@@ -25,9 +25,9 @@ def load_library(path)
   hash
 end
 
-def get_japanese_emoticon(path, emoticons)
+def get_japanese_emoticon(path, emoticon)
   dictionary = load_library(path)
-  dictionary[get_emoticon]
+  dictionary[:get_emoticon][emoticon]
 end
 
 def get_english_meaning
