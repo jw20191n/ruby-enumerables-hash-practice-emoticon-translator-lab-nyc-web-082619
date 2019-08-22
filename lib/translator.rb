@@ -14,7 +14,7 @@ def load_library(path)
   hash = { "get_meaning": { }, "get_emoticon": { } }
   
   # :get_meaning => {"☜(⌒▽⌒)☞" => ""angel",
-  # "japanese emoticons" => "key",...}
+  # ("japanese emoticons" => "key"),...}
   # :get_emoticon => {"emoticons[key][0]" (english) => "emoticons[key][1]"(japanese)}
   
   emoticons.each_key do | key |
@@ -27,7 +27,7 @@ end
 
 def get_japanese_emoticon(path, emoticons)
   dictionary = load_library(path)
-  
+  dictionary
 end
 
 def get_english_meaning
