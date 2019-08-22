@@ -36,6 +36,10 @@ end
 
 def get_english_meaning(path, emoticon)
   dictionary = load_library(path)
-  dictionary[:get_meaning][emoticon]
+  if dictionary[:get_meaning].include?(emoticon)
+    return dictionary[:get_meaning][emoticon]
+  else
+    
+  end
   
 end
