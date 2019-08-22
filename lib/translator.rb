@@ -30,7 +30,7 @@ def get_japanese_emoticon(path, emoticon)
   if dictionary.include?(emoticon)
     return dictionary[:get_emoticon][emoticon]
   else
-    
+    return "Sorry, that emoticon was not found"
   end
 end
 
